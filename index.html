@@ -8,252 +8,235 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-
 body{
-margin:0;
-font-family:'Cairo',sans-serif;
-background:linear-gradient(#d7ccc8,#efebe9);
-scroll-behavior:smooth;
+  margin:0;
+  font-family:'Cairo',sans-serif;
+  background:linear-gradient(#d7ccc8,#efebe9);
+  scroll-behavior:smooth;
 }
 
 /* الشريط */
-
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:250px;
-background-image:url("aot.jpeg");
-background-size:contain;
-background-repeat:no-repeat;
-background-position:center;
-color:white;
-padding-top:10px;
-z-index:1000;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
-text-align:center;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:250px;
+  background-image:url("aot.jpeg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  color:white;
+  padding-top:10px;
+  z-index:1000;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  text-align:center;
 }
 
 header h1{
-margin:0;
-font-size:22px;
+  margin:0;
+  font-size:22px;
 }
 
 /* الازرار */
-
 nav{
-display:flex;
-justify-content:center;
-gap:12px;
-margin-top:8px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-top:8px;
 }
 
 nav a{
-text-decoration:none;
-color:white;
-background:#5d4037;
-padding:8px 18px;
-border-radius:20px;
-font-weight:bold;
-transition:0.3s;
+  text-decoration:none;
+  color:white;
+  background:#5d4037;
+  padding:8px 18px;
+  border-radius:20px;
+  font-weight:bold;
+  transition:0.3s;
 }
 
 nav a:hover{
-background:#4e342e;
-transform:scale(1.07);
+  background:#4e342e;
+  transform:scale(1.07);
 }
 
 /* الكعكة */
-
 .cake-container{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:30px;
-margin-top:280px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  margin-top:280px;
 }
 
 .anime-img{
-width:150px;
-height:220px;
-object-fit:cover;
-border-radius:15px;
-border:3px solid #5d4037;
+  width:150px;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+  border:3px solid #5d4037;
 }
 
 .cake{
-width:250px;
+  width:250px;
 }
 
 .layer{
-height:50px;
-background:#8d6e63;
-border-radius:10px;
-margin:5px;
-animation:float 3s infinite ease-in-out;
+  height:50px;
+  background:#8d6e63;
+  border-radius:10px;
+  margin:5px;
+  animation:float 3s infinite ease-in-out;
 }
 
 .layer2{background:#6d4c41;}
 .layer3{background:#4e342e;}
 
 @keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-8px)}
-100%{transform:translateY(0)}
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+  100%{transform:translateY(0)}
 }
 
 .candle{
-width:15px;
-height:45px;
-background:white;
-margin:auto;
-position:relative;
+  width:15px;
+  height:45px;
+  background:white;
+  margin:auto;
+  position:relative;
 }
 
 .flame{
-width:16px;
-height:16px;
-background:orange;
-border-radius:50%;
-position:absolute;
-top:-16px;
-animation:flicker 1s infinite;
+  width:16px;
+  height:16px;
+  background:orange;
+  border-radius:50%;
+  position:absolute;
+  top:-16px;
+  animation:flicker 1s infinite;
 }
 
 @keyframes flicker{
-0%{transform:scale(1)}
-50%{transform:scale(1.3)}
-100%{transform:scale(1)}
+  0%{transform:scale(1)}
+  50%{transform:scale(1.3)}
+  100%{transform:scale(1)}
 }
 
 /* الكروت */
-
 .card{
-background:white;
-border-radius:20px;
-padding:25px;
-margin:40px auto;
-max-width:800px;
-box-shadow:0 8px 25px rgba(0,0,0,0.2);
-text-align:center;
+  background:white;
+  border-radius:20px;
+  padding:25px;
+  margin:40px auto;
+  max-width:800px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.2);
+  text-align:center;
 }
 
 /* خلفية المعايدات */
-
 #messages{
-background-image:linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("mohamed.jpeg");
-background-size:cover;
-background-position:center;
+  background-image:linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("mohamed.jpeg");
+  background-size:cover;
+  background-position:center;
 }
 
 /* خلفية الأمنيات */
-
 #wish{
-background-image:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("sano.jpeg");
-background-size:cover;
-background-position:center;
+  background-image:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("sano.jpeg");
+  background-size:cover;
+  background-position:center;
 }
 
 /* كلام خاص */
-
 #customText{
-border:2px dashed #6d4c41;
-background:#efebe9;
+  border:2px dashed #6d4c41;
+  background:#efebe9;
 }
 
 /* المعايدات */
-
 .message{
-background:#d7ccc8;
-padding:12px;
-border-radius:15px;
-margin:10px 0;
-text-align:right;
+  background:#d7ccc8;
+  padding:12px;
+  border-radius:15px;
+  margin:10px 0;
+  text-align:right;
+  line-height:1.8;
+  white-space:pre-wrap; /* هذا يحافظ على النصوص كما هي */
+  word-wrap:break-word;
+  font-size:16px;
 }
 
 /* الردود */
-
 .reply{
-background:#efebe9;
-margin-right:20px;
-padding:10px;
-border-radius:12px;
-margin-top:5px;
+  background:#efebe9;
+  margin-right:20px;
+  padding:10px;
+  border-radius:12px;
+  margin-top:5px;
+  white-space:pre-wrap;
 }
 
 /* الأغنية */
-
 .song-box{
-max-width:500px;
-margin:40px auto;
-background:#d7ccc8;
-padding:20px;
-border-radius:20px;
-box-shadow:0 6px 18px rgba(0,0,0,0.2);
+  max-width:500px;
+  margin:40px auto;
+  background:#d7ccc8;
+  padding:20px;
+  border-radius:20px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.2);
 }
 
 audio{
-width:100%;
+  width:100%;
 }
 
 /* الأمنيات */
-
 #wishInput{
-width:90%;
-height:120px;
-border-radius:15px;
-padding:10px;
-border:2px solid #6d4c41;
+  width:90%;
+  height:120px;
+  border-radius:15px;
+  padding:10px;
+  border:2px solid #6d4c41;
 }
 
 button{
-padding:6px 14px;
-border:none;
-border-radius:12px;
-background:#6d4c41;
-color:white;
-cursor:pointer;
-margin-top:6px;
+  padding:6px 14px;
+  border:none;
+  border-radius:12px;
+  background:#6d4c41;
+  color:white;
+  cursor:pointer;
+  margin-top:6px;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-
 <h1>🎉 عيد ميلاد سعيد دعاء 🎉</h1>
-
 <nav>
 <a href="#customText">كلام خاص</a>
 <a href="#messages">معايدات</a>
 <a href="#song">الأغنية</a>
 <a href="#wish">أمنيتك</a>
 </nav>
-
 </header>
 
 <!-- الكعكة -->
-
 <div class="cake-container">
-
 <img src="anime-left.jpeg" class="anime-img">
-
 <div class="cake">
 <div class="candle"><div class="flame"></div></div>
 <div class="layer"></div>
 <div class="layer layer2"></div>
 <div class="layer layer3"></div>
 </div>
-
 <img src="anime-right.jpeg" class="anime-img">
-
 </div>
 
 <!-- كلام خاص -->
-
 <div class="card" id="customText">
 <h2>📝 دعاء هذا الكلام لكي</h2>
 <p>
@@ -264,14 +247,12 @@ margin-top:6px;
 </div>
 
 <!-- المعايدات -->
-
 <div class="card" id="messages">
 <h2>💌 معايدات الأصدقاء</h2>
 <div id="messagesBox"></div>
 </div>
 
 <!-- الأغنية -->
-
 <div class="song-box" id="song">
 <h2>🎵 أغنية عيد الميلاد</h2>
 <audio controls>
@@ -280,10 +261,8 @@ margin-top:6px;
 </div>
 
 <!-- الأمنيات -->
-
 <div class="card" id="wish">
 <h2>🌟 تمني أمنيتك</h2>
-
 <input type="password" id="pass" placeholder="كلمة السر">
 <br>
 <button onclick="unlock()">فتح</button>
@@ -293,132 +272,105 @@ margin-top:6px;
 <br>
 <button onclick="sendWish()">إرسال الأمنية</button>
 </div>
-
 </div>
 
+<!-- سكربت -->
 <script type="module">
-
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
 const supabase = createClient(
-"https://nzdfadqvewomrkvkflmw.supabase.co",
-"sb_publishable_KLTDq8nXHlVGUilTp79aQg_m98kEvCk"
+  "https://nzdfadqvewomrkvkflmw.supabase.co",
+  "sb_publishable_KLTDq8nXHlVGUilTp79aQg_m98kEvCk"
 );
 
-const box=document.getElementById("messagesBox");
+const box = document.getElementById("messagesBox");
 
 /* تحميل المعايدات */
+async function loadMessages() {
+  const { data: messages } = await supabase
+    .from("messages")
+    .select("*")
+    .eq("type", "public")
+    .order("id");
 
-async function loadMessages(){
+  box.innerHTML = "";
 
-const {data:messages}=await supabase
-.from("messages")
-.select("*")
-.eq("type","public")
-.order("id");
+  for (const m of messages) {
+    const div = document.createElement("div");
+    div.className = "message";
 
-box.innerHTML="";
+    // عرض النص كما هو بالسطور والمسافات
+    div.innerHTML = `
+      <b>${m.name}</b>: <span>${m.text}</span>
+      <br>
+      <button onclick="reply('${m.id}')">رد</button>
+      <div id="replies-${m.id}"></div>
+    `;
 
-for(const m of messages){
+    box.appendChild(div);
 
-const div=document.createElement("div");
-div.className="message";
+    // تحميل الردود
+    const { data: replies } = await supabase
+      .from("replies")
+      .select("*")
+      .eq("parent", m.id);
 
-div.innerHTML=`
-<b>${m.name}</b>: ${m.text}
-<br>
-<button onclick="reply('${m.id}')">رد</button>
-<div id="replies-${m.id}"></div>
-`;
-
-box.appendChild(div);
-
-/* تحميل الردود */
-
-const {data:replies}=await supabase
-.from("replies")
-.select("*")
-.eq("parent",m.id);
-
-replies.forEach(r=>{
-
-const rep=document.createElement("div");
-rep.className="reply";
-rep.innerHTML=`<b>${r.name}</b>: ${r.text}`;
-
-document
-.getElementById("replies-"+m.id)
-.appendChild(rep);
-
-});
-
-}
-
+    replies.forEach(r => {
+      const rep = document.createElement("div");
+      rep.className = "reply";
+      rep.innerHTML = `<b>${r.name}</b>: <span>${r.text}</span>`;
+      document.getElementById("replies-" + m.id).appendChild(rep);
+    });
+  }
 }
 
 loadMessages();
 
-/* الرد */
+/* الرد على المعايدة */
+window.reply = async (id) => {
+  const name = prompt("اسمك");
+  const text = prompt("اكتب الرد");
 
-window.reply = async(id)=>{
+  if (!name || !text) return;
 
-const name = prompt("اسمك");
-const text = prompt("اكتب الرد");
+  await supabase.from("replies").insert([{
+    parent: id,
+    name: name,
+    text: text
+  }]);
 
-if(!name || !text) return;
-
-await supabase.from("replies").insert([{
-parent:id,
-name:name,
-text:text
-}]);
-
-loadMessages();
-
+  loadMessages();
 };
 
-/* كلمة السر */
-
-window.unlock=()=>{
-
-if(document.getElementById("pass").value==="30032007"){
-document.getElementById("wishBox").style.display="block";
-}else{
-alert("كلمة السر خطأ");
-}
-
+/* فتح صندوق الأمنيات بكلمة السر */
+window.unlock = () => {
+  if (document.getElementById("pass").value === "30032007") {
+    document.getElementById("wishBox").style.display = "block";
+  } else {
+    alert("كلمة السر خطأ");
+  }
 };
 
 /* إرسال الأمنية */
+window.sendWish = async () => {
+  const wish = document.getElementById("wishInput").value;
+  if (!wish) return;
 
-window.sendWish=async()=>{
+  await supabase.from("private_wishes").insert([{ wish }]);
 
-const wish=document.getElementById("wishInput").value;
-
-if(!wish) return;
-
-await supabase.from("private_wishes").insert([{wish}]);
-
-alert("تم إرسال الأمنية");
-
-document.getElementById("wishInput").value="";
-
+  alert("تم إرسال الأمنية");
+  document.getElementById("wishInput").value = "";
 };
 
 /* اخفاء الشريط عند النزول */
-
-window.addEventListener("scroll",function(){
-
-let header=document.querySelector("header");
-
-if(window.scrollY===0){
-header.style.top="0";
-}else{
-header.style.top="-250px";
-}
-
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  if (window.scrollY === 0) {
+    header.style.top = "0";
+  } else {
+    header.style.top = "-250px";
+  }
 });
-
 </script>
 
 </body>
